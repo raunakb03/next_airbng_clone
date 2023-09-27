@@ -2,7 +2,7 @@
 
 import React from "react";
 import Select from "react-select";
-import useConturies from "@/app/hooks/useCountries";
+import useCountries from "@/app/hooks/useCountries";
 
 export type CountrySelectValue = {
   flag: string;
@@ -18,7 +18,7 @@ interface CountrySelectProps {
 }
 
 export default function CountrySelect({ value, onChange }: CountrySelectProps) {
-  const { getAll } = useConturies();
+  const { getAll } = useCountries();
   return (
     <div>
       <Select

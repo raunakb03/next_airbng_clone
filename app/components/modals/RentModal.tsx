@@ -93,7 +93,7 @@ const RentModal = () => {
       .post(`/api/listings`, data)
       .then(() => {
         toast.success("Listing created");
-        router.reload();
+        router.refresh();
         reset();
         setStep(STEPS.CATEGORY);
         rentModal.onClose();
