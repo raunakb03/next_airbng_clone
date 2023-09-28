@@ -1,19 +1,18 @@
 "use client";
 
-import React from "react";
 import { IconType } from "react-icons";
 
-interface ListingsCategoryProps {
+interface CategoryViewProps {
   icon: IconType;
   label: string;
   description: string;
 }
 
-const ListingsCategory = ({
+const CategoryView: React.FC<CategoryViewProps> = ({
   icon: Icon,
   label,
   description,
-}: ListingsCategoryProps) => {
+}) => {
   return (
     <div className="flex flex-col gap-6">
       <div className="flex flex-row items-center gap-4">
@@ -27,4 +26,4 @@ const ListingsCategory = ({
   );
 };
 
-export default ListingsCategory;
+export default CategoryView;
